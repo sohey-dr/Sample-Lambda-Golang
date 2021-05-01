@@ -7,8 +7,8 @@ import (
 )
 
 type MyEvent struct {
-    FirstName string json:"firstName"
-    LastName  string json:"lastName"
+    FirstName string `json:"firstName"`
+    LastName  string `json:"lastName"`
 }
 
 func HandleRequest(ctx context.Context, name MyEvent) (string, error) {
